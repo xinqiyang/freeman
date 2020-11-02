@@ -1,0 +1,11 @@
+version: "2"
+services:
+  mritdv2ray:
+    image: jrohy/v2ray
+    hostname: v2ray
+    privileged: true
+    restart: always
+    volumes:
+      - /home/ubuntu/freeman/docker/v2ray/v2ray/config.json:/etc/v2ray/config.json
+    ports:
+      - "32026:32026"
