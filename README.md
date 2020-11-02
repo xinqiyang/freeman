@@ -39,6 +39,7 @@ Mac 下客户端，使用 V2RayU ， Windows上，还是推荐使用官方的V2R
 
 ```base
 ssh ubuntu@xxxx.xxxx.xxx.xxx 
+
 sudo apt-get install -y docker.io
 sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
@@ -48,6 +49,8 @@ sudo usermod -aG docker $USER
 2.克隆项目到机器上，并修改自己的端口和 uuid 码
 
 ```bash
+cd ~/ 
+pwd  ### 这里显示 /home/ubuntu/freeman/ 这里路径不对的话，需要修改docker-compose.yml中的配置文件的位置。 
 git clone https://github.com/xinqiyang/freeman
 cd freemain/docker
 
